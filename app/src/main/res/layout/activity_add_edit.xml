@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="pragmaticdevelopment.com.pragdevrestaurant.AddEditActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editRestName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtRestAddressLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name:"
+        android:id="@+id/txtRestNameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/txtRestAddressLabel"
+        android:layout_alignEnd="@+id/txtRestAddressLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Address:"
+        android:id="@+id/txtRestAddressLabel"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/editRestName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editRestAddress"
+        android:layout_alignTop="@+id/txtRestAddressLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/txtRestAddressLabel"
+        android:layout_toEndOf="@+id/txtRestAddressLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description"
+        android:id="@+id/txtRestDescriptionLabel"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/editRestAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editRestDescription"
+        android:layout_below="@+id/txtRestDescriptionLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editRestAddress"
+        android:maxHeight="150dp"
+        android:layout_alignEnd="@+id/editRestAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tags(Comma Separated)"
+        android:id="@+id/txtRestTagsLabel"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/editRestDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editRestTags"
+        android:layout_below="@+id/txtRestTagsLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:weightSum="1.0"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Add Restaurant"
+            android:id="@+id/btnAction"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btnCancelAdd"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+</RelativeLayout>

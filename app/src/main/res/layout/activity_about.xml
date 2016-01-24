@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+    <TextView android:text="@string/txtV_scott_no" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV_scottNo"
+        android:layout_below="@+id/txtV_scott"
+        android:layout_alignLeft="@+id/txtV_SofiaNo"
+        android:layout_alignStart="@+id/txtV_SofiaNo" />
+
+    <TextView
+        android:text="@string/txtV_sofia_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV_SofiaNo"
+        android:layout_below="@+id/txtV_sofia"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/txtV_khalil_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV_khalilNo"
+        android:layout_below="@+id/txtV_khalil"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/txtV_mas_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV_masNo"
+        android:layout_below="@+id/txtV_mas"
+        android:layout_alignLeft="@+id/txtV_khalilNo"
+        android:layout_alignStart="@+id/txtV_khalilNo" />
+
+    <TextView
+        android:text="@string/txtV_scott"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/txtV_scott"
+        android:textStyle="bold"
+        android:textColor="#3b53db"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/txtV_sofia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV_sofia"
+        android:textStyle="bold"
+        android:textColor="#3b53db"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtV_scottNo"
+        android:layout_alignLeft="@+id/txtV_scott"
+        android:layout_alignStart="@+id/txtV_scott" />
+
+    <TextView
+        android:text="@string/txtV_khalil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV_khalil"
+        android:textStyle="bold"
+        android:textColor="#3b53db"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtV_SofiaNo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/txtV_mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV_mas"
+        android:textStyle="bold"
+        android:textColor="#3b53db"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtV_khalilNo"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

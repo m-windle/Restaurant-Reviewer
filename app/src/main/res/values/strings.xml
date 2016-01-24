@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Restaurant Ratings</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="txtV_scott">Scott Legrove</string>
+    <string name="txtV_sofia">Sofia Pedraza</string>
+    <string name="txtV_khalil">Khalil Sherif</string>
+    <string name="txtV_mas">Masatoshi Windle</string>
+
+    <string name="txtV_scott_no">100 914 325</string>
+    <string name="txtV_sofia_no">100 887 685</string>
+    <string name="txtV_khalil_no">100 901 327</string>
+    <string name="txtV_mas_no">100 913 032</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_splash">splash</string>
+    <string name="title_activity_testing">Map</string>
+</resources>
